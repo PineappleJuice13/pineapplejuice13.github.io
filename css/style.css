@@ -55,8 +55,6 @@ li a:hover {
     
     margin-left: 350px;
     margin-top: 10;
-    
-
 }
 
 .textBox2 {
@@ -81,7 +79,7 @@ li a:hover {
 .topright {
     position: absolute;
     top: 130px;
-    right: 25px;
+    right: 50px;
     font-size: 18px;
 }
 
