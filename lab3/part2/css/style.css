@@ -1,4 +1,25 @@
-
-.redBox {
+html {
+    font-family: sans-serif;
+    font-size: 3em;
+    text-shadow: 3px 2px 5px black;
+    text-align: center;
+    line-height: 300%;
+  }
+  
     
+.redBox {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    border: 1px solid darkred;
+    border-radius: 5%;
+    
+    color: white;
+    background-color: red;
+    background: linear-gradient(to bottom right, rgba(255,255,255,1) 7%, rgba(255,0,0,1) 50%, rgba(77,18,18,0.9726015406162465) 100%);
+
+    padding: 20px;
+    margin-top: 15%;
+    margin-left: 35%;
 }
+
