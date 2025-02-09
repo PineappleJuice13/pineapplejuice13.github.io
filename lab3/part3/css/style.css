@@ -51,11 +51,10 @@
 
   body {
     font-family: PT Sans, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 20px;
     word-spacing: 5px;
     letter-spacing: 2px;
-    font-weight: 500;
   }
 
   h1, h2, h3 {
@@ -80,6 +79,7 @@
 
   a:focus {
     color: red;
+
   }
 
   a:hover {
