@@ -49,3 +49,17 @@ body {
   .feature {
       width: 200px;
   }
+
+  /* MY CSS */
+
+  li {
+    display: inline;
+    text-align: center;
+    padding: 5%;
+  }
+
+  header {
+    position: sticky;
+    top: 15px;
+
+  }
