@@ -6,6 +6,9 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+let counter = 0;
+const para = document.querySelector("p");
+
 // function to generate random number
 
 function random(min, max) {
@@ -18,8 +21,6 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-let counter = 0;
-const para = document.createElement("p");
 
 class Shape {
   constructor(x, y, velX, velY){
@@ -73,22 +74,20 @@ class Ball extends Shape {
           const dy = this.y - ball.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
     
-          if (distance < this.size + ball.size) {
-            ball.color = this.color = randomRGB();
-          }
+
         }
       }
     }
       
       
       
-  }
+}
 
 class EvilCircle extends Ball {
-  constructor(x, y, velX, velY) {
+  constructor(x, y) {
     super(x, y, 20, 20);
-    color = 'white';
-    size = 10;
+    this.color = 'white';
+    this.size = 10;
 
     window.addEventListener("keydown", (e) => {
       switch (e.key) {
@@ -147,7 +146,7 @@ class EvilCircle extends Ball {
         if (distance < this.size + ball.size) {
           ball.exists = false;
           counter --;
-          para.textContent = 'Ball Count: ' + counter;
+          para.textContent = "Ball Counter: " + counter;
         }
       }
     }
@@ -171,8 +170,9 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
-  counter ++
-  para.textContent = "Ball count: " + counter;
+  counter ++;
+  para.textContent = "Ball Counter: " + counter;
+  
 }
 
 const badCircle = new EvilCircle(50,50, 30, 30);
