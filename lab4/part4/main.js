@@ -18,6 +18,9 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+let counter = 0;
+const para = document.createElement("p");
+
 class Shape {
   constructor(x, y, velX, velY){
     this.x = x;
@@ -143,14 +146,14 @@ class EvilCircle extends Ball {
   
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          counter --;
+          para.textContent = 'Ball Count: ' + counter;
         }
       }
     }
   }
 
 }
-
-
 
 const balls = [];
 
@@ -168,6 +171,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  counter ++
+  para.textContent = "Ball count: " + counter;
 }
 
 const badCircle = new EvilCircle(50,50, 30, 30);
@@ -184,9 +189,14 @@ function loop() {
       }
       
     }
-  
+
+    badCircle.draw();
+    badCircle.checkBounds();
+    badCircle.collisionDetect();
+
     requestAnimationFrame(loop);
   }
+
   
   loop();
 
