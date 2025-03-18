@@ -8,6 +8,7 @@ html, body {
 html {
   font-size: 10px;
   background-color: #dde;
+  /*font-size: 10px;*/
 }
 
 body {
@@ -45,7 +46,7 @@ font[size="5"] {
 }
 
 p, li, table {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2;
 }
 
@@ -216,7 +217,7 @@ audio {
 }
 
 .comment-form input, .comment-form label, .show-hide {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 32px;
 }
 
