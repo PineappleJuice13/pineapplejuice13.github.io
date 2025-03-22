@@ -24,14 +24,16 @@
       <font size="7">Welcome to our wildlife website</font>
     </div>
 
+    <nav>
     <div class="nav">
+      
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-
+      
       <form class="search">
         <label for="q">
           <span class="visually-hidden">Search Query Input Box</span>
@@ -44,13 +46,12 @@
         <input type="submit" id="search" value="Go!">
       </form>
     </div>
-
+  </nav>
     <main>
       <article>
         <h1><font size="6">The trouble with Bears</font></h1>
         <p>
-          By Evan Wild
-          <br>
+          By Evan Wild, <br>
           Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, 
           self-serving and always on the hunt for food. Nothing like the bears you see on TV, 
           like Baloo from renowned documentary, The Jungle Book.
@@ -73,9 +74,9 @@
           </caption>
           <thead>
             <tr>
-              <th id = "Bear Type">Bear Type</th>
+              <th id = "BearType">Bear Type</th>
               <th id = "Coat">Coat</th>
-              <th id = "Adult Size">Adult size</th>
+              <th id = "AdultSize">Adult size</th>
               <th id = "Habitat">Habitat</th>
               <th id = "Lifespan">Lifespan</th>
               <th id = "Diet">Diet</th>
@@ -83,32 +84,32 @@
           </thead>
           <tbody>
             <tr>
-              <td id="Wild" headers="Bear Type">Wild</td>
-              <td id="Brown or Black" headers="Coat">Brown or black</td>
-              <td id="1.4 to 2.8 meters" headers="Adult Size">
+              <td id="Wild" headers="BearType">Wild</td>
+              <td id="BrownorBlack" headers="Coat">Brown or black</td>
+              <td id="1.4To2.8Meters" headers="AdultSize">
                 1.4 to 2.8 meters
               </td>
-              <td id="Woods and forest" headers="Habitat">
+              <td id="WoodsAndForest" headers="Habitat">
                 Woods and forests
               </td>
-              <td id="25 to 28 years" headers="Lifespan">
+              <td id="25To28Years" headers="Lifespan">
                 25 to 28 years
               </td>
-              <td id="Fish, meat, plants" headers="Diet">
+              <td id="Fish,Meat,Plants" headers="Diet">
                 Fish, meat, plants
               </td>
             </tr>
             <tr>
-              <td id="Ubran" headers="Bear Type">Urban</td>
-              <td id="North Face" headers="Coat">North Face</td>
-              <td id="18 to 22" headers="Adult Size">18 to 22</td>
-              <td id="Condos and coffee shops" headers="Habitat">
+              <td id="Ubran" headers="BearType">Urban</td>
+              <td id="NorthFace" headers="Coat">North Face</td>
+              <td id="18To22" headers="AdultSize">18 to 22</td>
+              <td id="CondosAndCoffeeShops" headers="Habitat">
                 Condos and coffee shops
               </td>
-              <td id="20 to 32 years" headers="Lifespan">
+              <td id="20to32Years" headers="Lifespan">
                 20 to 32 years
               </td>
-              <td id="Starbucks, sushi" headers="Diet">Starbucks, sushi</td>
+              <td id="Starbucks,Sushi" headers="Diet">Starbucks, sushi</td>
             </tr>
           </tbody>
         </table>
@@ -160,6 +161,8 @@
             It looks like your browser doesn't support HTML5 audio players.
             Here is a <a href="media/bear.mp3">a link to the audio</a> instead.
           </audio>
+          <p style="text-align: center;">Transcript<br>
+          "This isn't really an audio fact file about bears, but it is an audio file you can transcribed."</p>
           <br>
         
         
@@ -178,7 +181,7 @@
 
           <div class="comment-wrapper">
 
-            <font size="6">Add comment</font>
+            <h3><font size="6">Add comment</font></h3>
 
             <form class="comment-form">
               <div class="flex-pair">
@@ -195,7 +198,7 @@
               </div>
             </form>
 
-            <font size="6">Comments</font>
+            <h3><font size="6">Comments</font></h3>
 
             <ul class="comment-container">
 
